@@ -1,0 +1,86 @@
+
+body * {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.one{
+  background-image: url('img/1.jpg');
+  opacity: 1;
+}
+.two{
+  background-image: url('img/2.jpg');
+}
+.three {
+  background-image: url('img/3.jpg');
+}
+.four{
+  background-image: url('img/4.jpg');
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  z-index: 1;
+  margin: 1rem;
+}
+
+.info {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  margin: 1rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.548);
+  width: 20vw;
+  animation: fade-in 1s forwards ease-in-out;
+  padding: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.description {
+ margin-top: 1rem;
+ word-spacing: 3px;
+ font-size: 1.25rem;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: (185, 160, 160) bold;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px 40px;
+  margin: 0 1rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
