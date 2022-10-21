@@ -21,13 +21,13 @@ section {
   background-image: url('img/1.jpg');
   opacity: 1;
 }
-.two{
+.two {
   background-image: url('img/2.jpg');
 }
 .three {
   background-image: url('img/3.jpg');
 }
-.four{
+.four {
   background-image: url('img/4.jpg');
 }
 
@@ -36,20 +36,20 @@ section {
   bottom: 0;
   right:0;
   z-index: 1;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .info {
   position: absolute;
   text-align: center;
   z-index: 1;
-  margin: 1rem;
-  border: 2px solid rgb(255, 255, 255);
+  margin: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.766);
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.548);
   width: 20vw;
   animation: fade-in 1s forwards ease-in-out;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .name {
@@ -64,14 +64,20 @@ section {
 }
 
 button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: (185, 160, 160) bold;
   color: rgb(255, 255, 255);
   background-color: transparent;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 15px;
-  padding: 10px 40px;
+  padding: 0.75rem 3rem;
   margin: 0 1rem;
+}
+button:hover {
+  border: 2px solid rgb(210, 210, 210);
+  color: rgb(210, 210, 210);
+  background-color: rgba(255, 255, 255, 0.088);
+
 }
 
 @keyframes fade-in {

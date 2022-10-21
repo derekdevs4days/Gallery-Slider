@@ -40,7 +40,7 @@ const infoFadeIn = [
 ];
 
 const infoFadeInTiming = {
-  duration: 1000,
+  duration: 500,
   iterations: 1,
 }
 function changeText() {
@@ -58,7 +58,7 @@ function handleRight() {
     current = 0;
   }
   sections[current].style.opacity = 1;
-  changeText()
+  changeText();
 }
 
 function handleLeft() {
